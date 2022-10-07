@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT KADANG KADANG</title>
+</head>
+<body>
+    <div id="container">
+        <div id="flip">
+            <div>
+                <div>
+                    WHAT ARE YOU SAYING
+                </div>
+            </div>
+            <div>
+                <div>
+                    WE JUST FRIEND
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0px;
+        font-family: Arial;
+        text-align: center;
+        background-color: black;
+    }
+    #container {
+        color: #999;
+        font-size: 36px;
+        font-weight: bold;
+        padding-top: 200px;
+        position: fixed;
+        width: 100%;
+        bottom: 45%;
+        display: block;
+    }
+    #flip {
+        height: 50px;
+        overflow: hidden;
+    }
+    #flip > div > div {
+        color: rgb(0, 0, 0);
+        padding: 4px 12px;
+        height: 45px;
+        margin-bottom: 45px;
+        display: inline-block;
+    }
+    #flip div:first-child {
+        animation: textflip 5s linear infinite;
+    }
+    #flip div:first-child div {
+        background: #97e3ff;
+    }
+    #flip div:last-child div {
+        background: #f4a5b5;
+    }
+    @keyframes textflip {
+        0% {
+            margin-top: -270px;
+        }
+        5% {
+            margin-top: -180px;
+        }
+        33% {
+            margin-top: -180px;
+        }
+        38% {
+            margin-top: -90px;
+        }
+        66% {
+            margin-top: -90px;
+        }
+        71% {
+            margin-top: 0px;
+        }
+        99.99% {
+            margin-top: 0px;
+        }
+        100% {
+            margin-top: -270px;
+        }
+    }
+    p {
+        position: fixed;
+        width: 100%;
+        bottom: 30px;
+        font-size: 12px;
+        color: #999;
+        margin-top: 200px;
+    }
+</style>
